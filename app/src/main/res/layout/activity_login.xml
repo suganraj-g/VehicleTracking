@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.sabaree.vehicletracking.LoginActivity"
+    android:background="@color/logincolor">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="cursive"
+        android:text="Vehicle Tracking"
+        android:textColor="#ac005d"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/login_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/register_number"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="#ff9f68"
+            android:textColorHint="#ff9f68"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Register Number"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#ff9f68"
+            android:textColorHint="#ff9f68"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="#f85959"
+            android:textAllCaps="true"
+            android:text="@string/login_btn"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:text="@string/login_btn" />
+
+        <TextView
+            android:id="@+id/new_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user"
+            tools:text="@string/new_user"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textColor="#ff9f68"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

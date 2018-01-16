@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.sabaree.vehicletracking.SignupActivity"
+    android:background="@color/logincolor">
+
+    <ScrollView
+        android:id="@+id/signup_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/user_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/hintclr"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/hintclr" />
+
+            <EditText
+                android:id="@+id/user_reg_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Register Number"
+                android:paddingLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/hintclr"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/hintclr"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/user_name" />
+
+            <RadioGroup
+                android:id="@+id/user_gender_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_reg_no"
+                android:paddingLeft="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/user_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textSize="16sp"
+                    android:textColor="@color/hintclr"
+                    android:checked="false"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/user_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/hintclr"
+                    android:checked="false"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:textColor="@color/hintclr"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColorHint="@color/hintclr"
+                android:layout_below="@id/user_gender_check"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/user_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:textColor="@color/hintclr"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColorHint="@color/hintclr"
+                android:layout_below="@id/user_email"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/user_re_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Re-Type Password"
+                android:textColor="@color/hintclr"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColorHint="@color/hintclr"
+                android:layout_below="@id/user_pass" />
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_btn"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#f85959"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:layout_below="@id/user_re_pass"
+                tools:text="@string/signup_btn" />
+
+            <TextView
+                android:id="@+id/existing_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/existing_user"
+                tools:text="@string/existing_user"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:textColor="#ff9f68"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/signup_btn"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

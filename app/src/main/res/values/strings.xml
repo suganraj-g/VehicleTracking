@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VehicleTracking</string>
+    <string name="todo">TODO</string>
+    <string name="login_btn">login</string>
+    <string name="signup_btn">create account</string>
+    <string name="new_user">No account yet? Create One</string>
+    <string name="existing_user">Already a member? Login</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
